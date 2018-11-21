@@ -102,6 +102,11 @@
     [self setGradientColors:@[color, color] withPositions:nil];
 }
 
+- (void) hidePopupView
+{
+    self.popUpView.hidden = YES;
+}
+
 - (void)setPopUpViewAnimatedColors:(NSArray *)colors
 {
     [self setPopUpViewAnimatedColors:colors withPositions:nil];

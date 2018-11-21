@@ -83,8 +83,9 @@ NSString *const FillColorAnimation = @"fillColor";
 
         _cornerRadius = 4.0;
         _arrowLength = 8.0;
-        _widthPaddingFactor = 1.15;
-        _heightPaddingFactor = 1.1;
+//        _widthPaddingFactor = 1.15;
+        _widthPaddingFactor = 1.6;
+        _heightPaddingFactor = 1.6;
 
         _textLayer = [CATextLayer layer];
         _textLayer.alignmentMode = kCAAlignmentCenter;
@@ -306,7 +307,7 @@ NSString *const FillColorAnimation = @"fillColor";
     [arrowPath addLineToPoint:CGPointMake(MIN(arrowTipX + x, maxX), CGRectGetMaxY(roundedRect) - arrowLength)];
     [arrowPath closePath];
     
-    [popUpPath appendPath:arrowPath];
+//    [popUpPath appendPath:arrowPath];
     
     return popUpPath;
 }
